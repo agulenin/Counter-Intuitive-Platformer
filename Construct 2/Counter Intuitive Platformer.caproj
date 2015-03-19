@@ -24,7 +24,9 @@
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="tint">Tint</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -62,8 +64,8 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="198415276903043" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.09375" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.09375" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -82,8 +84,15 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7263336111485908" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\grass.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\grass_inv.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -93,11 +102,14 @@
                 <behavior-type name="Sine" sid="5928567395193706">
                     <behavior id="Sin" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="3749827306390809">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3448096316607624" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -144,7 +156,17 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784148136178672" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="-0" hotspotY="-0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\tree_whole.png">
+                        <image-point name="Imagepoint 1" x="0.494429" y="0.679186" />
+                        <collision-poly>
+                            <point x="0.44429" y="0.0625978" />
+                            <point x="0.94429" y="0.117371" />
+                            <point x="0.977716" y="0.829421" />
+                            <point x="0.477716" y="0.981221" />
+                            <point x="0.0626741" y="0.866979" />
+                            <point x="0.0445682" y="0.15493" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -157,8 +179,28 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3934297750231094" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform.png">
+                        <collision-poly>
+                            <point x="0.0245902" y="0.0967742" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971311" y="0.112903" />
+                            <point x="1" y="0.5" />
+                            <point x="0.97541" y="0.903226" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0245902" y="0.903226" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.476923" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform_inv.png">
+                        <collision-poly>
+                            <point x="0.0122951" y="0.0461539" />
+                            <point x="0.5" y="0.0461539" />
+                            <point x="1" y="0.0153846" />
+                            <point x="0.983607" y="0.984615" />
+                            <point x="0.491803" y="1" />
+                            <point x="0.00819674" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -171,7 +213,14 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3831775726919799" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.476923" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform_inv.png">
+                        <collision-poly>
+                            <point x="0" y="0.0307692" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -203,8 +252,8 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="11187696664174" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.476923" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform_inv.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -245,8 +294,8 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5288748974144964" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\grass.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\grass_inv.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -306,7 +355,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2620769692389056" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="-0.008" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -316,6 +365,241 @@
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4583877762540745" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner" sid="3103234007707239">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5108848946710705" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathFall" sid="6193546819152221">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4394964475482711">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7297540927431117" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="underCoin" sid="7652784441648794">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168079685813743" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="653032049288336">
+            <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+            </effects>
+            <texture original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\sky.png" />
+        </object-type>
+        <object-type name="Sprite" sid="7229435600663266">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4956017558529352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\cloud_small.png">
+                        <collision-poly>
+                            <point x="0.428" y="0.428" />
+                            <point x="0.5" y="0.328" />
+                            <point x="0.672" y="0.328" />
+                            <point x="0.904" y="0.5" />
+                            <point x="0.696" y="0.696" />
+                            <point x="0.304" y="0.696" />
+                            <point x="0.244" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="terrain_1_rounded" sid="8529360066451907">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1088188606751145">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="73133512305145" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\corner_grass_TL.png">
+                        <collision-poly>
+                            <point x="0.257576" y="0.257576" />
+                            <point x="0.5" y="0.0909091" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0909091" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\corner_grass_TL_inv.png">
+                        <collision-poly>
+                            <point x="0.253731" y="0.253731" />
+                            <point x="0.492537" y="0.0895522" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0895522" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="movingPlatform_VEertical" sid="401285801055676">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="1936340590040949">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="2442113876885081">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3383802538986407" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.476923" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform_inv.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vertical_special" sid="9008167775275599">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="9312933649164956">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="1105069947275112">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5975066823516709" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spike_always" sid="8299295700765134">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4922531544074822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.508" y="0.388" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="changingPlatform_1" sid="9458904615690997">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2070499609409873">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7945344356345013" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.476923" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform_inv.png">
+                        <collision-poly>
+                            <point x="0" y="0.0307692" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="changingPlatform_2" sid="3231305584046543">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9472814218899501">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2788868982318643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform.png">
+                        <collision-poly>
+                            <point x="0.0245902" y="0.0967742" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971311" y="0.112903" />
+                            <point x="1" y="0.5" />
+                            <point x="0.97541" y="0.903226" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0245902" y="0.903226" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.476923" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\platform_inv.png">
+                        <collision-poly>
+                            <point x="0.0122951" y="0.0461539" />
+                            <point x="0.5" y="0.0461539" />
+                            <point x="1" y="0.0153846" />
+                            <point x="0.983607" y="0.984615" />
+                            <point x="0.491803" y="1" />
+                            <point x="0.00819674" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="currencyCounter" sid="1112658244362441">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="barrier" sid="7104458993732897">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3537776456971438">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9516866573553126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="animation" sid="6052615270460275">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="22" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1562633322469597" speed="24">
+                    <frame duration="1" hotspotX="0.554455" hotspotY="0.603774" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0001.png" />
+                    <frame duration="1" hotspotX="0.554455" hotspotY="0.603774" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0002.png" />
+                    <frame duration="1" hotspotX="0.405405" hotspotY="0.458015" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0003.png" />
+                    <frame duration="1" hotspotX="0.405405" hotspotY="0.458015" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0004.png" />
+                    <frame duration="1" hotspotX="0.373134" hotspotY="0.456" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0005.png" />
+                    <frame duration="1" hotspotX="0.373134" hotspotY="0.456" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0006.png" />
+                    <frame duration="1" hotspotX="0.416667" hotspotY="0.456693" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0007.png" />
+                    <frame duration="1" hotspotX="0.416667" hotspotY="0.456693" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0008.png" />
+                    <frame duration="1" hotspotX="0.527473" hotspotY="0.508621" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0009.png" />
+                    <frame duration="1" hotspotX="0.527473" hotspotY="0.508621" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0010.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.611111" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0011.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.611111" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0012.png" />
+                    <frame duration="1" hotspotX="0.553398" hotspotY="0.521368" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0013.png" />
+                    <frame duration="1" hotspotX="0.553398" hotspotY="0.521368" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0014.png" />
+                    <frame duration="1" hotspotX="0.439024" hotspotY="0.453125" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0015.png" />
+                    <frame duration="1" hotspotX="0.439024" hotspotY="0.453125" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0016.png" />
+                    <frame duration="1" hotspotX="0.373134" hotspotY="0.464" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0017.png" />
+                    <frame duration="1" hotspotX="0.373134" hotspotY="0.464" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0018.png" />
+                    <frame duration="1" hotspotX="0.349206" hotspotY="0.472868" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0019.png" />
+                    <frame duration="1" hotspotX="0.349206" hotspotY="0.472868" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0020.png" />
+                    <frame duration="1" hotspotX="0.52809" hotspotY="0.484127" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0021.png" />
+                    <frame duration="1" hotspotX="0.52809" hotspotY="0.484127" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0022.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -338,20 +622,25 @@
         </family>
         <family name="ChangeFrame" plugin-id="Sprite" sid="6437777082107006">
             <members>
-                <member>bomb</member>
+                <member>changingPlatform_1</member>
+                <member>changingPlatform_2</member>
                 <member>Enemy_1</member>
                 <member>flag</member>
                 <member>invisibleBlock</member>
                 <member>invisiblePlatform</member>
                 <member>movingPlatform</member>
+                <member>movingPlatform_VEertical</member>
                 <member>normalPlatform</member>
                 <member>Player</member>
                 <member>terrain_1</member>
+                <member>vertical_special</member>
             </members>
         </family>
     </families>
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
+        <layout>Level3.xml</layout>
+        <layout>Level2.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Event sheet 1.xml</event-sheet>
