@@ -25,7 +25,7 @@
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
-        <effect author="Scirra" id="tint">Tint</effect>
+        <effect author="Scirra" id="inverse">Inverse</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -64,8 +64,22 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="198415276903043" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="-1.09375" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="-1.09375" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.09375">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.65625" y="1" />
+                            <point x="0.28125" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.09375">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.6875" y="1" />
+                            <point x="0.15625" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -96,23 +110,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Enemy_1" sid="9800282712354639">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="5928567395193706">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="3749827306390809">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3448096316607624" speed="0">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="healthBar" sid="7127340926029718">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
@@ -129,8 +126,45 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2583835909554877" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="18" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2583835909554877" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0018.png" />
+                </animation>
+                <animation framecount="18" loop="1" name="Inverted" pingpong="0" repeatcount="1" repeatto="0" sid="1738554302910017" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Under\badguy_flying_inv20018.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -227,8 +261,57 @@
         <object-type name="coin" sid="2349548143984816">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1371550249214091" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1371550249214091" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Normal\spirit_2\spirit0024.png" />
+                </animation>
+                <animation framecount="24" loop="1" name="Inverted" pingpong="0" repeatcount="1" repeatto="0" sid="862586011510295" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\spirits\Under\spirit0024.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -261,7 +344,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9751400450932158" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501873" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\spikes.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -307,8 +390,77 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8375180599232887" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="70" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8375180599232887" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0030.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0031.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0032.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0033.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0034.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0035.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0036.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0037.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0038.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0039.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0040.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0041.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0042.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0043.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0044.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0045.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0046.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0047.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0048.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0049.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0050.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0051.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0052.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0053.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0054.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0055.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0056.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0057.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0058.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0059.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0060.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0061.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0062.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0063.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0064.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0065.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0066.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0067.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0068.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0069.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Thrower\Normal\badguy_ballthrow0070.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -323,31 +475,25 @@
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="806386285775548" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.292" y="0.292" />
-                            <point x="0.5" y="0.208" />
-                            <point x="0.7" y="0.3" />
-                            <point x="0.772" y="0.5" />
-                            <point x="0.688" y="0.688" />
-                            <point x="0.5" y="0.768" />
-                            <point x="0.304" y="0.696" />
-                            <point x="0.212" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.292" y="0.292" />
-                            <point x="0.5" y="0.208" />
-                            <point x="0.7" y="0.3" />
-                            <point x="0.772" y="0.5" />
-                            <point x="0.688" y="0.688" />
-                            <point x="0.5" y="0.768" />
-                            <point x="0.304" y="0.696" />
-                            <point x="0.212" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="18" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="806386285775548" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Flying Enemy_Corrected\Normal\badguy_flying0018.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -399,11 +545,6 @@
         </object-type>
         <object-type name="TiledBackground" sid="653032049288336">
             <plugin id="TiledBg" />
-            <effects>
-                <effect-type name="Tint">
-                    <effect id="tint" />
-                </effect-type>
-            </effects>
             <texture original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\sky.png" />
         </object-type>
         <object-type name="Sprite" sid="7229435600663266">
@@ -494,13 +635,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4922531544074822" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.508" y="0.388" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.501873" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\spikes.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -576,8 +711,13 @@
         </object-type>
         <object-type name="animation" sid="6052615270460275">
             <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Inverse">
+                    <effect id="inverse" />
+                </effect-type>
+            </effects>
             <animation-folder expanded="1">
-                <animation framecount="22" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1562633322469597" speed="24">
+                <animation framecount="22" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="1562633322469597" speed="24">
                     <frame duration="1" hotspotX="0.554455" hotspotY="0.603774" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0001.png" />
                     <frame duration="1" hotspotX="0.554455" hotspotY="0.603774" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0002.png" />
                     <frame duration="1" hotspotX="0.405405" hotspotY="0.458015" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0003.png" />
@@ -601,7 +741,339 @@
                     <frame duration="1" hotspotX="0.52809" hotspotY="0.484127" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0021.png" />
                     <frame duration="1" hotspotX="0.52809" hotspotY="0.484127" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0022.png" />
                 </animation>
+                <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="6740396956234556" speed="0.5">
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.482269" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Idle\standing0001.png" />
+                    <frame duration="0.15" hotspotX="0.541667" hotspotY="0.482269" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Idle\standing0041.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="1115190152768849" speed="5">
+                    <frame duration="1" hotspotX="0.57265" hotspotY="0.483051" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Jump\jump.png">
+                        <collision-poly>
+                            <point x="0.398702" y="0.310578" />
+                            <point x="0.568376" y="0.0214219" />
+                            <point x="0.886515" y="0.163371" />
+                            <point x="0.796375" y="0.478814" />
+                            <point x="0.923631" y="0.831058" />
+                            <point x="0.568376" y="0.857345" />
+                            <point x="0.0646565" y="0.978264" />
+                            <point x="0.340377" y="0.478814" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="7552615367669962">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8367575211413121" speed="5">
+                    <frame duration="1" hotspotX="0.787611" hotspotY="0.617117" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Bad guy flying\badguy_flying0001.png">
+                        <collision-poly>
+                            <point x="0.279291" y="0.323915" />
+                            <point x="0.788008" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.618755" />
+                            <point x="1" y="1" />
+                            <point x="0.788008" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.618755" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="patrolWall" sid="152136077890531">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9778398096491274" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy_1_Walking" sid="4886367459753599">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Patrol" sid="4475660922729435" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="320332721504979">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9223188669155208" speed="40">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Walking_Enemy_Corrected\Normal world\badguy_walk0024.png" />
+                </animation>
+                <animation framecount="24" loop="1" name="Inverted" pingpong="0" repeatcount="1" repeatto="0" sid="1042708417857883" speed="50">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\walking enemy\Inverted\badguy_walk0024.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="1581549358509696">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\better size\sky_inv.png" />
+        </object-type>
+        <object-type name="Boss" sid="142975418542886">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="48" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2779711647496562" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0030.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0031.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0032.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0033.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0034.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0035.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0036.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0037.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0038.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0039.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0040.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0041.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0042.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0043.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0044.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0045.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0046.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0047.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Normal\bigboss0048.png" />
+                </animation>
+                <animation framecount="24" loop="1" name="Inverted" pingpong="0" repeatcount="1" repeatto="0" sid="6286956575906654" speed="24">
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0001.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0002.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0003.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0004.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0005.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0006.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0007.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0008.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0009.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0010.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0011.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0012.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0013.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0014.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0015.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0016.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0017.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0018.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0019.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0020.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0021.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0022.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0023.png" />
+                    <frame duration="1" hotspotX="0.95" hotspotY="-0.34" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\Boss\Under\littleboss0024.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="levelPass" sid="4123129448795751">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4321967240722788" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="levelPass2" sid="9861468794794616">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1004491436703643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Presenter" sid="4978548315227644">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3292479280295124" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Normal\oldman0024.png" />
+                </animation>
+                <animation framecount="24" loop="1" name="Inverted" pingpong="0" repeatcount="1" repeatto="0" sid="1904419168490767" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\presenter\Under\oldman_inv0024.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathFall_01" sid="330652760105172">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9404438175387938">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4513774810289663" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner_01" sid="3680958282244177">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6426240615095404" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner_02" sid="5845357701476351">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4299804951764509" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathFall_2" sid="6336250000071733">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8616486817848205">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5783437825264951" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textBox" sid="4641069471528733">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4623200265363138" speed="5">
+                    <frame duration="1" hotspotX="0.50033" hotspotY="0.501818" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\textbox.png">
+                        <collision-poly>
+                            <point x="0.0118655" y="0.0654545" />
+                            <point x="0.49967" y="0" />
+                            <point x="0.988135" y="0.0654545" />
+                            <point x="1" y="0.498182" />
+                            <point x="0.988135" y="0.934545" />
+                            <point x="0.49967" y="1" />
+                            <point x="0.0118655" y="0.934545" />
+                            <point x="0" y="0.498182" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialogueText" sid="9751646813995205">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
@@ -624,7 +1096,6 @@
             <members>
                 <member>changingPlatform_1</member>
                 <member>changingPlatform_2</member>
-                <member>Enemy_1</member>
                 <member>flag</member>
                 <member>invisibleBlock</member>
                 <member>invisiblePlatform</member>
