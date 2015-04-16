@@ -10,7 +10,9 @@
     <unique-id>3phjf8c2bcezm</unique-id>
     <saved-with-version>17800</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -40,14 +42,14 @@
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Enable WebGL">On</prop>
-        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen in browser">Off</prop>
         <prop name="Hide address bar">No</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-type name="BackgroundTile" sid="494896596881318">
             <plugin id="TiledBg" />
             <texture />
@@ -1113,6 +1115,93 @@
         <object-type name="dialogueText2" sid="4765651392703379">
             <plugin id="Text" />
         </object-type>
+        <object-type name="levelPassScreen" sid="6479835369166851">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918440213873117" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\levels_1 (1).png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\levels_2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\level 3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathFall_l2_01" sid="2274192263996026">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2236038020695303">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2885687976158947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner_l2_01" sid="709279146420759">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5961613609532994" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathFall_l2_2" sid="3350736660817029">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="648029056539939">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5945168074859251" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner_l2_2" sid="4132560767332617">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2437318317572726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathFall_l3_1" sid="4247511123287415">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="378651184203975">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7412106349660266" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner_l3_1" sid="7658989592871051">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6690160520070171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MainMenu" sid="5773850668140162">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7880926671249475" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\Main Menu.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="1467447954543179">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Audio" sid="1093543554943833">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Terrain" plugin-id="Sprite" sid="5206846823638461">
@@ -1146,16 +1235,33 @@
             </members>
         </family>
     </families>
-    <layout-folder expanded="1">
+    <layout-folder expanded="0">
         <layout>Layout 1.xml</layout>
+        <layout>Main Menu.xml</layout>
         <layout>Level3.xml</layout>
         <layout>Level2.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Mouse" uid="1832" />
+        <global-instance type="Audio" uid="1833">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

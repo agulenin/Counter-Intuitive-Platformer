@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="Bossarea" sid="8445732082816008" static="0" type="number">0</variable>
         <variable constant="0" name="BarWidth" sid="1916613482274263" static="0" type="number">300</variable>
-        <variable constant="0" name="Level" sid="7505968318066583" static="0" type="number">1</variable>
+        <variable constant="0" name="Level" sid="7505968318066583" static="0" type="number">0</variable>
         <variable comment="currency value" constant="0" name="Currency" sid="1998347129513023" static="0" type="number">0</variable>
         <variable constant="0" name="Shooted" sid="8173279796892834" static="0" type="number">0</variable>
         <variable constant="0" name="UnderworldTime" sid="8374177411065035" static="0" type="number">6</variable>
@@ -26,7 +26,7 @@
             </actions>
         </event-block>
         <event-group description="" sid="7114612768669732" title="Comments and notes" />
-        <event-group collapsed="1" description="" sid="412749544726405" title="Character Movement">
+        <event-group description="" sid="412749544726405" title="Character Movement">
             <sub-events>
                 <event-block sid="720495508296602">
                     <conditions>
@@ -331,8 +331,31 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="2738812944802227" title="Collisions">
+        <event-group collapsed="1" description="" sid="2738812944802227" title="Collisions">
             <sub-events>
+                <event-block sid="3916977760496512">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="5128129472287013" type="Player" />
+                        <condition id="1" name="Is overlapping another object" sid="2809148759268942" type="Player">
+                            <param id="0" name="Object">Enemy_1_Walking</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3555175410147135" type="Enemy_1_Walking" />
+                        <action behavior="Platform" id="5" name="Set gravity" sid="189221750345526" type="Player">
+                            <param id="0" name="Gravity">325</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="1933076031166992" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2489561081481298" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="7068055305802003" type="Player">
+                            <param id="0" name="Gravity">1500</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="1870786783941828">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="6390418093118044" type="Player">
@@ -506,7 +529,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Control and Stats to test and debug the game" sid="3567152613234305" title="Debug">
+        <event-group collapsed="1" description="Control and Stats to test and debug the game" sid="3567152613234305" title="Debug">
             <sub-events>
                 <event-block sid="2887434165394674">
                     <conditions>
@@ -923,7 +946,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="1372377087502036" title="Checkpoints">
+        <event-group collapsed="1" description="" sid="1372377087502036" title="Checkpoints Level 1">
             <sub-events>
                 <event-block sid="3446185094220065">
                     <conditions>
@@ -1023,7 +1046,57 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="6577330574070555" title="Dialogues">
+        <event-group collapsed="1" description="" sid="5601215845770708" title="Checkpoint Level 2">
+            <sub-events>
+                <event-block sid="3375921589700847">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="883460639313614" type="Player">
+                            <param id="0" name="Object">deathFall_l2_01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="3748629950755389" type="spawner_l2_01">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5525079092618551">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5904802399049528" type="Player">
+                            <param id="0" name="Object">deathFall_l2_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="2498816835542502" type="spawner_l2_2">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="2718469411515555" title="Checkpoints Level 3">
+            <sub-events>
+                <event-block sid="6910618443610492">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="580429111033336" type="Player">
+                            <param id="0" name="Object">deathFall_l3_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="9387377658980688" type="spawner_l3_1">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="6577330574070555" title="Dialogues">
             <sub-events>
                 <event-block sid="1036453760806852">
                     <conditions>
@@ -1037,6 +1110,9 @@
                     <actions>
                         <action behavior="Platform" id="11" name="Set enabled" sid="9175641454205682" type="Player">
                             <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5901722370486553" type="System">
+                            <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="-15" name="Set visible" sid="2052152081554507" type="textBox">
                             <param id="0" name="Visibility">1</param>
@@ -1147,8 +1223,89 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="3451247449960496" title="Level passes">
+        <event-group description="" sid="3451247449960496" title="Level passes">
             <sub-events>
+                <event-block sid="458782031297281">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="499778759637018" type="System" />
+                        <condition id="-14" name="Compare variable" sid="6820819180562375" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3596790167176698" type="levelPassScreen">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6365941711918419" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5782717899241686" type="levelPassScreen">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4140686606980293">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="474580136250431" type="System" />
+                        <condition id="-14" name="Compare variable" sid="4455078070792286" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="2886842292371783" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="4833471328468523" type="levelPassScreen">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3133719359780943" type="levelPassScreen">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9400536452718389" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7780954968234131" type="levelPassScreen">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="5854836006515386" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8133040509290228">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3554126795314537" type="System" />
+                        <condition id="-14" name="Compare variable" sid="4100375400569493" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="8003006119264207" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7655489052307245" type="levelPassScreen">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2019243366905959" type="levelPassScreen">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2056628572603622" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="2694775701728786" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7793340660804053" type="levelPassScreen">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="41425669770906">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="3855472510112332" type="Player">
@@ -1231,6 +1388,100 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group collapsed="1" description="" sid="9243893196529297" title="Boss">
+            <sub-events>
+                <event-block sid="6513776663503462">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9614969487878212" type="Player">
+                            <param id="0" name="Object">bossArea1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1304035880146987" type="System">
+                            <param id="0" name="Variable">Bossarea</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3866225398872496" type="System">
+                            <param id="0" name="Variable">World</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5765291011147277">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3655572968952988" type="Player">
+                            <param id="0" name="Object">bossArea2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5172310610583625" type="System">
+                            <param id="0" name="Variable">Bossarea</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="6483214725917166" type="System">
+                            <param id="0" name="Group name">&quot;Character Movement&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9880069308342669" type="textBox2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9471355657738808" type="dialogueText2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8681113914326093" type="dialogueText2">
+                            <param id="0" name="Text">&quot;Muahaha I&apos;m evil&quot;</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="404608404973068" type="dialogueText2">
+                            <param id="0" name="Color">rgb(100, 0, 0)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4451496738493906" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2678335644765167" type="dialogueText2">
+                            <param id="0" name="Text">&quot;I&apos;m weird&quot;</param>
+                        </action>
+                        <action id="2" name="Set font face" sid="2277667796222872" type="dialogueText2">
+                            <param id="0" name="Font face">&quot;Georgia&quot;</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="5740229828237525" type="dialogueText2">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="170924938792683" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="2" name="Set font face" sid="9908285238404384" type="dialogueText2">
+                            <param id="0" name="Font face">&quot;Courier&quot;</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5938555353473441" type="dialogueText2">
+                            <param id="0" name="Text">&quot;I bet U can&apos;t defeat me&quot;</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="6882722532739785" type="dialogueText2">
+                            <param id="0" name="Color">rgb(100, 0, 0)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="136089708399689" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6566302638054506" type="dialogueText2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6945655416831305" type="textBox2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6258036182851224" type="System">
+                            <param id="0" name="Variable">Bossarea</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9546569840536087" type="System">
+                            <param id="0" name="Group name">&quot;Character Movement&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <comment>If the player falls off the bottom of the layout, restart the level.</comment>
         <event-block collapsed="1" sid="1165613991879633">
             <conditions>
@@ -1289,116 +1540,21 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="3916977760496512">
+        <event-block sid="4511364322314401">
             <conditions>
-                <condition behavior="Platform" id="9" name="On landed" sid="5128129472287013" type="Player" />
-                <condition id="1" name="Is overlapping another object" sid="2809148759268942" type="Player">
-                    <param id="0" name="Object">Enemy_1_Walking</param>
+                <condition id="6" name="On object clicked" sid="4826846249019064" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">MainMenu</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="3555175410147135" type="Enemy_1_Walking" />
-                <action behavior="Platform" id="5" name="Set gravity" sid="189221750345526" type="Player">
-                    <param id="0" name="Gravity">325</param>
-                </action>
-                <action behavior="Platform" id="7" name="Simulate control" sid="1933076031166992" type="Player">
-                    <param id="0" name="Control">2</param>
-                </action>
-                <action id="-16" name="Wait" sid="2489561081481298" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="7068055305802003" type="Player">
-                    <param id="0" name="Gravity">1500</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6513776663503462">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9614969487878212" type="Player">
-                    <param id="0" name="Object">bossArea1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="1304035880146987" type="System">
-                    <param id="0" name="Variable">Bossarea</param>
+                <action id="-9" name="Set value" sid="3541313362038087" type="System">
+                    <param id="0" name="Variable">Level</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-9" name="Set value" sid="3866225398872496" type="System">
-                    <param id="0" name="Variable">World</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5765291011147277">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3655572968952988" type="Player">
-                    <param id="0" name="Object">bossArea2</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="5172310610583625" type="System">
-                    <param id="0" name="Variable">Bossarea</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Set group active" sid="6483214725917166" type="System">
-                    <param id="0" name="Group name">&quot;Character Movement&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9880069308342669" type="textBox2">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9471355657738808" type="dialogueText2">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="0" name="Set text" sid="8681113914326093" type="dialogueText2">
-                    <param id="0" name="Text">&quot;Muahaha I&apos;m evil&quot;</param>
-                </action>
-                <action id="4" name="Set font color" sid="404608404973068" type="dialogueText2">
-                    <param id="0" name="Color">rgb(100, 0, 0)</param>
-                </action>
-                <action id="-16" name="Wait" sid="4451496738493906" type="System">
-                    <param id="0" name="Seconds">2.0</param>
-                </action>
-                <action id="0" name="Set text" sid="2678335644765167" type="dialogueText2">
-                    <param id="0" name="Text">&quot;I&apos;m weird&quot;</param>
-                </action>
-                <action id="2" name="Set font face" sid="2277667796222872" type="dialogueText2">
-                    <param id="0" name="Font face">&quot;Georgia&quot;</param>
-                    <param id="1" name="Style">0</param>
-                </action>
-                <action id="4" name="Set font color" sid="5740229828237525" type="dialogueText2">
-                    <param id="0" name="Color">rgb(0, 0, 0)</param>
-                </action>
-                <action id="-16" name="Wait" sid="170924938792683" type="System">
-                    <param id="0" name="Seconds">2.0</param>
-                </action>
-                <action id="2" name="Set font face" sid="9908285238404384" type="dialogueText2">
-                    <param id="0" name="Font face">&quot;Courier&quot;</param>
-                    <param id="1" name="Style">0</param>
-                </action>
-                <action id="0" name="Set text" sid="5938555353473441" type="dialogueText2">
-                    <param id="0" name="Text">&quot;I bet U can&apos;t defeat me&quot;</param>
-                </action>
-                <action id="4" name="Set font color" sid="6882722532739785" type="dialogueText2">
-                    <param id="0" name="Color">rgb(100, 0, 0)</param>
-                </action>
-                <action id="-16" name="Wait" sid="136089708399689" type="System">
-                    <param id="0" name="Seconds">2.0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="6566302638054506" type="dialogueText2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="6945655416831305" type="textBox2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="6258036182851224" type="System">
-                    <param id="0" name="Variable">Bossarea</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-12" name="Set group active" sid="9546569840536087" type="System">
-                    <param id="0" name="Group name">&quot;Character Movement&quot;</param>
-                    <param id="1" name="State">1</param>
+                <action id="-2" name="Go to layout" sid="6368104828510081" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
                 </action>
             </actions>
         </event-block>
