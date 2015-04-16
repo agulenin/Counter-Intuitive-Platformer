@@ -1075,6 +1075,44 @@
         <object-type name="dialogueText" sid="9751646813995205">
             <plugin id="Text" />
         </object-type>
+        <object-type name="bossArea1" sid="2948314856163324">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1534306149125772" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bossArea2" sid="2418079301119213">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5926745824116529" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textBox2" sid="5840838731739533">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4314355527460244" speed="5">
+                    <frame duration="1" hotspotX="0.50033" hotspotY="0.501818" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\textbox.png">
+                        <collision-poly>
+                            <point x="0.0118655" y="0.0654545" />
+                            <point x="0.49967" y="0" />
+                            <point x="0.988135" y="0.0654545" />
+                            <point x="1" y="0.498182" />
+                            <point x="0.988135" y="0.934545" />
+                            <point x="0.49967" y="1" />
+                            <point x="0.0118655" y="0.934545" />
+                            <point x="0" y="0.498182" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialogueText2" sid="4765651392703379">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Terrain" plugin-id="Sprite" sid="5206846823638461">

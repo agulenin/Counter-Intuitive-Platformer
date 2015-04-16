@@ -416,8 +416,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>6801</x>
-                        <y>970</y>
+                        <x>233</x>
+                        <y>769</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -2599,7 +2599,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1120</x>
-                        <y>608</y>
+                        <y>623</y>
                         <z>0</z>
                         <width>171.12121582</width>
                         <height>37.265197754</height>
@@ -2628,7 +2628,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1376</x>
-                        <y>512</y>
+                        <y>527</y>
                         <z>0</z>
                         <width>171.121002197</width>
                         <height>37.26499939</height>
@@ -2657,7 +2657,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1664</x>
-                        <y>448</y>
+                        <y>463</y>
                         <z>0</z>
                         <width>171.12121582</width>
                         <height>37.265197754</height>
@@ -2679,7 +2679,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1668</x>
-                        <y>385</y>
+                        <y>400</y>
                         <z>0</z>
                         <width>84</width>
                         <height>84</height>
@@ -2954,7 +2954,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3648</x>
-                        <y>768</y>
+                        <y>861</y>
                         <z>0</z>
                         <width>171.12121582</width>
                         <height>37.265197754</height>
@@ -2983,7 +2983,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3296</x>
-                        <y>768</y>
+                        <y>861</y>
                         <z>0</z>
                         <width>171.121002197</width>
                         <height>37.26499939</height>
@@ -3012,7 +3012,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>3968</x>
-                        <y>768</y>
+                        <y>861</y>
                         <z>0</z>
                         <width>171.12121582</width>
                         <height>37.265197754</height>
@@ -3049,7 +3049,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>4192</x>
-                        <y>736</y>
+                        <y>829</y>
                         <z>0</z>
                         <width>68</width>
                         <height>68</height>
@@ -3078,7 +3078,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>4416</x>
-                        <y>736</y>
+                        <y>829</y>
                         <z>0</z>
                         <width>171.12121582</width>
                         <height>37.265197754</height>
@@ -19803,6 +19803,50 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="bossArea1" uid="1064">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7011</x>
+                        <y>836</y>
+                        <z>0</z>
+                        <width>123</width>
+                        <height>440</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="bossArea2" uid="1359">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7521</x>
+                        <y>826</y>
+                        <z>0</z>
+                        <width>164</width>
+                        <height>460</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -19862,6 +19906,55 @@
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="textBox2" uid="1822">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>326</x>
+                        <y>247</y>
+                        <z>0</z>
+                        <width>380</width>
+                        <height>115</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500329614</hotspotX>
+                        <hotspotY>0.50181818</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="dialogueText2" uid="1823">
+                    <properties>
+                        <text>This is a quest text left character</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Courier,-32,400,0</font>
+                        <color>102,51,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>146</x>
+                        <y>197</y>
+                        <z>0</z>
+                        <width>382</width>
+                        <height>104</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

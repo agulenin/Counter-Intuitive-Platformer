@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Bossarea" sid="8445732082816008" static="0" type="number">0</variable>
         <variable constant="0" name="BarWidth" sid="1916613482274263" static="0" type="number">300</variable>
         <variable constant="0" name="Level" sid="7505968318066583" static="0" type="number">1</variable>
         <variable comment="currency value" constant="0" name="Currency" sid="1998347129513023" static="0" type="number">0</variable>
@@ -330,7 +331,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="2738812944802227" title="Collisions">
+        <event-group description="" sid="2738812944802227" title="Collisions">
             <sub-events>
                 <event-block sid="1870786783941828">
                     <conditions>
@@ -386,7 +387,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="5132049341153458">
+                <event-block disabled="1" sid="5132049341153458">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="4820204250074106" type="Player">
                             <param id="0" name="Object">Enemy_1_Walking</param>
@@ -396,7 +397,7 @@
                         <action id="-9" name="Destroy" sid="9022179393267208" type="Enemy_1_Walking" />
                     </actions>
                     <sub-events>
-                        <event-block sid="9833798114546632">
+                        <event-block disabled="1" sid="9833798114546632">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="2829337580607848" type="System">
                                     <param id="0" name="Variable">UnderworldTime</param>
@@ -505,12 +506,17 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Control and Stats to test and debug the game" sid="3567152613234305" title="Debug">
+        <event-group description="Control and Stats to test and debug the game" sid="3567152613234305" title="Debug">
             <sub-events>
-                <event-block collapsed="1" sid="2887434165394674">
+                <event-block sid="2887434165394674">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="4271635763652297" type="Keyboard">
                             <param id="0" name="Key">85 (U)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5508429660172216" type="System">
+                            <param id="0" name="Variable">Bossarea</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1041,8 +1047,15 @@
                         <action id="-16" name="Wait" sid="5504980219060929" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
+                        <action id="2" name="Set font face" sid="3221167152386089" type="dialogueText">
+                            <param id="0" name="Font face">&quot;Georgia&quot;</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
                         <action id="0" name="Set text" sid="3357663965342447" type="dialogueText">
-                            <param id="0" name="Text">&quot;Parto two &quot;</param>
+                            <param id="0" name="Text">&quot;Answer from main character &quot;</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="8116560030785226" type="dialogueText">
+                            <param id="0" name="Color">rgb(0, 0, 0)</param>
                         </action>
                         <action id="-16" name="Wait" sid="1264879777459718" type="System">
                             <param id="0" name="Seconds">2</param>
@@ -1134,7 +1147,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="3451247449960496" title="Level passes">
+        <event-group collapsed="1" description="" sid="3451247449960496" title="Level passes">
             <sub-events>
                 <event-block sid="41425669770906">
                     <conditions>
@@ -1276,32 +1289,118 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block collapsed="1" sid="9835090174823276">
+        <event-block sid="3916977760496512">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7429938226256097" type="Player">
+                <condition behavior="Platform" id="9" name="On landed" sid="5128129472287013" type="Player" />
+                <condition id="1" name="Is overlapping another object" sid="2809148759268942" type="Player">
                     <param id="0" name="Object">Enemy_1_Walking</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="9162909101019509" type="Enemy_1_Walking" />
+                <action id="-9" name="Destroy" sid="3555175410147135" type="Enemy_1_Walking" />
+                <action behavior="Platform" id="5" name="Set gravity" sid="189221750345526" type="Player">
+                    <param id="0" name="Gravity">325</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="1933076031166992" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="2489561081481298" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action behavior="Platform" id="5" name="Set gravity" sid="7068055305802003" type="Player">
+                    <param id="0" name="Gravity">1500</param>
+                </action>
             </actions>
-            <sub-events>
-                <event-block sid="9162517549076012">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="7716068970845311" type="System">
-                            <param id="0" name="Variable">UnderworldTime</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="8673378130962654" type="System">
-                            <param id="0" name="Variable">UnderworldTime</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+        </event-block>
+        <event-block sid="6513776663503462">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9614969487878212" type="Player">
+                    <param id="0" name="Object">bossArea1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1304035880146987" type="System">
+                    <param id="0" name="Variable">Bossarea</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3866225398872496" type="System">
+                    <param id="0" name="Variable">World</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5765291011147277">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3655572968952988" type="Player">
+                    <param id="0" name="Object">bossArea2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5172310610583625" type="System">
+                    <param id="0" name="Variable">Bossarea</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="6483214725917166" type="System">
+                    <param id="0" name="Group name">&quot;Character Movement&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9880069308342669" type="textBox2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9471355657738808" type="dialogueText2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="8681113914326093" type="dialogueText2">
+                    <param id="0" name="Text">&quot;Muahaha I&apos;m evil&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="404608404973068" type="dialogueText2">
+                    <param id="0" name="Color">rgb(100, 0, 0)</param>
+                </action>
+                <action id="-16" name="Wait" sid="4451496738493906" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="0" name="Set text" sid="2678335644765167" type="dialogueText2">
+                    <param id="0" name="Text">&quot;I&apos;m weird&quot;</param>
+                </action>
+                <action id="2" name="Set font face" sid="2277667796222872" type="dialogueText2">
+                    <param id="0" name="Font face">&quot;Georgia&quot;</param>
+                    <param id="1" name="Style">0</param>
+                </action>
+                <action id="4" name="Set font color" sid="5740229828237525" type="dialogueText2">
+                    <param id="0" name="Color">rgb(0, 0, 0)</param>
+                </action>
+                <action id="-16" name="Wait" sid="170924938792683" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="2" name="Set font face" sid="9908285238404384" type="dialogueText2">
+                    <param id="0" name="Font face">&quot;Courier&quot;</param>
+                    <param id="1" name="Style">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5938555353473441" type="dialogueText2">
+                    <param id="0" name="Text">&quot;I bet U can&apos;t defeat me&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="6882722532739785" type="dialogueText2">
+                    <param id="0" name="Color">rgb(100, 0, 0)</param>
+                </action>
+                <action id="-16" name="Wait" sid="136089708399689" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6566302638054506" type="dialogueText2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6945655416831305" type="textBox2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6258036182851224" type="System">
+                    <param id="0" name="Variable">Bossarea</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="9546569840536087" type="System">
+                    <param id="0" name="Group name">&quot;Character Movement&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
