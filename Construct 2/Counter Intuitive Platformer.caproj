@@ -719,7 +719,7 @@
                 </effect-type>
             </effects>
             <animation-folder expanded="1">
-                <animation framecount="22" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="1562633322469597" speed="24">
+                <animation framecount="22" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="1562633322469597" speed="50">
                     <frame duration="1" hotspotX="0.554455" hotspotY="0.603774" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0001.png" />
                     <frame duration="1" hotspotX="0.554455" hotspotY="0.603774" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0002.png" />
                     <frame duration="1" hotspotX="0.405405" hotspotY="0.458015" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\animation\run0003.png" />
@@ -1192,7 +1192,7 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7880926671249475" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\Main Menu.jpg" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Proprio\Agu\Concordia\Cart 415 (Game Design)\Counter Intuitive Platformer\Sprites\title_screen_updated.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1201,6 +1201,14 @@
         </object-type>
         <object-type name="Audio" sid="1093543554943833">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="MenuButton" sid="5700051440008214">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2241874564383699" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
@@ -1263,7 +1271,24 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="bgmusic.m4a" />
+        <file name="bgmusic.ogg" />
+        <file name="monster_flying.m4a" />
+        <file name="monster_flying.ogg" />
+        <file name="monster_killed.m4a" />
+        <file name="monster_killed.ogg" />
+        <file name="monster_throwing.m4a" />
+        <file name="monster_throwing.ogg" />
+        <file name="monster_throwing_hitplayer.m4a" />
+        <file name="monster_throwing_hitplayer.ogg" />
+        <file name="monster_walking.m4a" />
+        <file name="monster_walking.ogg" />
+        <file name="player_jumping.m4a" />
+        <file name="player_jumping.ogg" />
+        <file name="player_walking.m4a" />
+        <file name="player_walking.ogg" />
+    </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="1">
         <file-folder expanded="0" name="Icons">

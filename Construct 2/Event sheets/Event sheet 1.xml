@@ -26,7 +26,7 @@
             </actions>
         </event-block>
         <event-group description="" sid="7114612768669732" title="Comments and notes" />
-        <event-group description="" sid="412749544726405" title="Character Movement">
+        <event-group collapsed="1" description="" sid="412749544726405" title="Character Movement">
             <sub-events>
                 <event-block sid="720495508296602">
                     <conditions>
@@ -108,6 +108,31 @@
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="7154758349210278">
+                            <conditions>
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="7505148940945827" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="1234716349342033" type="Audio">
+                                    <param id="0" name="Audio file">player_walking</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;left&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7926279945839269">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="647886372862549" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="9592805904789324" type="Audio">
+                                    <param id="0" name="Tag">&quot;left&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block any="1" sid="422674450059558">
                     <conditions>
@@ -126,6 +151,31 @@
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="9652876141700668">
+                            <conditions>
+                                <condition behavior="Platform" id="2" name="Is on floor" sid="8337606717893824" type="Player" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="5968461724738368" type="Audio">
+                                    <param id="0" name="Audio file">player_walking</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;right&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1498329146824406">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="9663875515266734" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="5027367806490615" type="Audio">
+                                    <param id="0" name="Tag">&quot;right&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1149,7 +1199,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="971693896537229" title="Enemy patrol">
+        <event-group description="" sid="971693896537229" title="Enemy patrol">
             <sub-events>
                 <event-block sid="8189288401501997">
                     <conditions>
@@ -1185,7 +1235,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block collapsed="1" sid="9114086719163609">
+                <event-block sid="9114086719163609">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="1938274416543174" type="Enemy_1_Walking">
                             <param id="0" name="Object">patrolWall</param>
@@ -1243,6 +1293,12 @@
                         </action>
                         <action id="-15" name="Set visible" sid="5782717899241686" type="levelPassScreen">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="1380383852472044" type="Audio">
+                            <param id="0" name="Audio file">bgmusic</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1545,7 +1601,7 @@
                 <condition id="6" name="On object clicked" sid="4826846249019064" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">MainMenu</param>
+                    <param id="2" name="Object clicked">MenuButton</param>
                 </condition>
             </conditions>
             <actions>
@@ -1555,6 +1611,45 @@
                 </action>
                 <action id="-2" name="Go to layout" sid="6368104828510081" type="System">
                     <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2546593689036443">
+            <conditions>
+                <condition id="3" name="On key released" sid="5248555866661934" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="5186539709255477" type="Audio">
+                    <param id="0" name="Tag">&quot;right&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1353354343167317">
+            <conditions>
+                <condition id="3" name="On key released" sid="388626725862255" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="4278730972340814" type="Audio">
+                    <param id="0" name="Tag">&quot;left&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5873222769026373">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1008110142213094" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6526241904338106" type="Audio">
+                    <param id="0" name="Audio file">player_jumping</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
